@@ -1,0 +1,76 @@
+﻿<Window x:Class="PracaMagisterska.InstructionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PracaMagisterska"
+        mc:Ignorable="d"
+        Title="Instruction" Height="700" Width="1200" WindowStartupLocation="Manual" WindowState="Maximized" Closed="Window_Closed">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="#FF94CDE2"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="Return" Content="Zamknij" HorizontalAlignment="Left" VerticalAlignment="Top" Width="259" Click="Return_Click" Height="38" Margin="37,186,0,0" BorderBrush="#FF55A4AC" Foreground="White" Background="#FF6AB5C1" FontSize="16"/>
+        <Button x:Name="btn_Voice" Content="Sterowanie głosem" HorizontalAlignment="Left" VerticalAlignment="Top" Width="259" Click="Voice_Click" Height="38" Margin="37,34,0,0" BorderBrush="#FF55A4AC" Foreground="White" Background="#FF6AB5C1" FontSize="16"/>
+        <Button x:Name="btn_VoicePlusGesture" Content="Sterowanie głosem + gestami" HorizontalAlignment="Left" VerticalAlignment="Top" Width="259" Click="VoicePlusGesture_Click" Height="38" Margin="37,72,0,0" BorderBrush="#FF55A4AC" Foreground="White" Background="#FF6AB5C1" FontSize="16"/>
+        <Button x:Name="btn_Gesture" Content="Sterowanie gestami" HorizontalAlignment="Left" VerticalAlignment="Top" Width="259" Click="Gesture_Click" Height="38" Margin="37,110,0,0" BorderBrush="#FF55A4AC" Foreground="White" Background="#FF6AB5C1" FontSize="16"/>
+        <Button x:Name="btn_PickAndPlace" Content="Program PickAndPlace" HorizontalAlignment="Left" VerticalAlignment="Top" Width="259" Click="PickAndPlace_Click" Height="38" Margin="37,148,0,0" BorderBrush="#FF55A4AC" Foreground="White" Background="#FF6AB5C1" FontSize="16"/>
+        <Label Name="Voice" Content="W celu sterowania głosem zadeklarowane zostało 6 poleceń: " HorizontalAlignment="Left" Margin="438,192,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label Name="Voice1" Content="   - 'plus x' ruch robota po osi x w kierunku dodatnim" HorizontalAlignment="Left" Margin="438,223,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label Name="Voice2" Content="   - 'minus x' ruch robota po osi x w kierunku ujemnym" HorizontalAlignment="Left" Margin="438,254,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label Name="Voice3" Content="   - 'plus y' ruch robota po osi y w kierunku dodatnim" HorizontalAlignment="Left" Margin="438,290,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label Name="Voice4" Content="   - 'minus y' ruch robota po osi y w kierunku ujemnym" HorizontalAlignment="Left" Margin="438,321,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label Name="Voice5" Content="   - 'plus z' ruch robota po osi z w kierunku dodatnim" HorizontalAlignment="Left" Margin="438,357,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label Name="Voice6" Content="   - 'minus z' ruch robota po osi z w kierunku ujemnym" HorizontalAlignment="Left" Margin="438,388,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label Name="VoiceAndGesture" Content="Do sterowania poprzez kombinacje poleceń głosowych i gestów zaimplementowane zostału następujące polecenia:" HorizontalAlignment="Left" Margin="336,43,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="Voice7" Content="   - 'stop' zatrzymuje pracę robota" HorizontalAlignment="Left" Margin="438,419,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="VoiceAndGesture1" Content="   - 'axis x' ustawia oś x jako oś ruchu" HorizontalAlignment="Left" Margin="336,74,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="VoiceAndGesture2" Content="   - 'axis y' ustawia oś y jako oś ruchu" HorizontalAlignment="Left" Margin="336,105,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="VoiceAndGesture3" Content="   - 'axis z' ustawia oś y jako oś ruchu" HorizontalAlignment="Left" Margin="336,136,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="VoiceAndGesture4" Content="Aby sterować w danym kierunku należy użyć następujęcego ustawienia ciała:" HorizontalAlignment="Left" Margin="336,182,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="VoiceAndGesture5" Content="   - ruch w kierunku dodatnim odbywa się poprzez zamknięcie prawej dłoni i ustawienie jej" HorizontalAlignment="Left" Margin="336,213,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="VoiceAndGesture6" Content="     na prawo względem prawego łokcia ( rysunek numer 1 )" HorizontalAlignment="Left" Margin="336,232,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="VoiceAndGesture7" Content="   - ruch w kierunku ujemnym odbywa się poprzez zamknięcie prawej dłoni i ustawienie jej" HorizontalAlignment="Left" Margin="336,266,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="VoiceAndGesture8" Content="     na lewo względem prawego łokcia ( rysunek numer 2 )" HorizontalAlignment="Left" Margin="336,285,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="VoiceAndGesture9" Content="Rysunek numer 1: ruch robota w kierunku ujemnym:" HorizontalAlignment="Left" Margin="114,335,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="VoiceAndGesture10" Content="Rysunek numer 1: ruch robota w kierunku ujemnym:" HorizontalAlignment="Left" Margin="696,335,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Image Name="VoiceAndGesture11" HorizontalAlignment="Left" Height="248" Margin="184,388,0,0" VerticalAlignment="Top" Width="249" Source="Resources/plusAxis.PNG" Visibility="Hidden"/>
+        <Image Name="VoiceAndGesture12" HorizontalAlignment="Left" Height="248" Margin="762,393,0,0" VerticalAlignment="Top" Width="249" Source="Resources/minusAxis.PNG" Visibility="Hidden"/>
+        <Label x:Name="Gesture" Content="Do sterowania gestami zaimplementowano sześć zestawów gestów:" HorizontalAlignment="Left" Margin="382,29,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="Gesture1" Content="   - ruch w dodatnim kierunku osi y odbywa się, kiedy lewa dłoń jest zamknięta, znajduje" HorizontalAlignment="Left" Margin="382,60,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="Gesture2" Content="     się poniżej barku, a prawa dłoń znajduje się na prawo względem prawego łokcia  ( rysunek numer 1 )" HorizontalAlignment="Left" Margin="382,78,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="Gesture3" Content="   - ruch w ujemnym kierunku osi y odbywa się, kiedy lewa dłoń jest zamknięta, znajduje" HorizontalAlignment="Left" Margin="382,103,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="Gesture4" Content="     się poniżej barku, a prawa dłoń znajduje się na lewo względem prawego łokcia ( rysunek numer 2  )" HorizontalAlignment="Left" Margin="382,121,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="Gesture5" Content="   - ruch w dodatnim kierunku osi x odbywa się, kiedy lewa dłoń jest zamknięta, znajduje" HorizontalAlignment="Left" Margin="382,147,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="Gesture6" Content="     się pomiędzy barkiem, a czubkiem głowy i  prawa dłoń znajduje się na prawo ( rysunek numer 3 )" HorizontalAlignment="Left" Margin="382,165,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="Gesture8" Content="   - ruch w ujemnym kierunku osi x odbywa się, kiedy lewa dłoń jest zamknięta, znajduje" HorizontalAlignment="Left" Margin="382,190,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="Gesture9" Content="     się pomiędzy barkiem, a czubkiem głowy i  prawa dłoń znajduje się na lewo ( rysunek numer 4 )" HorizontalAlignment="Left" Margin="382,208,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="Gesture11" Content="   - ruch w dodatnim kierunku osi z odbywa się, kiedy lewa dłoń jest zamknięta, znajduje" HorizontalAlignment="Left" Margin="382,236,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="Gesture12" Content="     powyżej głowy,a  prawa dłoń znajduje się na prawo względem prawego łokcia ( rysunek numer 5 )" HorizontalAlignment="Left" Margin="382,254,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="Gesture14" Content="   - ruch w dodatnim kierunku osi z odbywa się, kiedy lewa dłoń jest zamknięta, znajduje " HorizontalAlignment="Left" Margin="382,281,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="Gesture15" Content="     się powyżej głowy i  prawa dłoń znajduje się na lewo względem prawego łokcia ( rysunek numer 6 )" HorizontalAlignment="Left" Margin="382,299,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="Gesture16" Content="Rysunek numer 1:" HorizontalAlignment="Left" Margin="66,344,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="Gesture17" Content="Rysunek numer 2:" HorizontalAlignment="Left" Margin="438,344,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="Gesture18" Content="Rysunek numer 3:" HorizontalAlignment="Left" Margin="807,344,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="Gesture19" Content="Rysunek numer 4:" HorizontalAlignment="Left" Margin="66,491,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="Gesture21" Content="Rysunek numer 5:" HorizontalAlignment="Left" Margin="438,491,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label x:Name="Gesture22" Content="Rysunek numer 6:" HorizontalAlignment="Left" Margin="807,491,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Image Name="Gesture23" HorizontalAlignment="Left" Height="133" Margin="245,357,0,0" VerticalAlignment="Top" Width="138" Source="Resources/plusY.PNG" Visibility="Hidden"/>
+        <Image Name="Gesture24" HorizontalAlignment="Left" Height="133" Margin="245,508,0,0" VerticalAlignment="Top" Width="138" Source="Resources/minusX.PNG" Visibility="Hidden"/>
+        <Image Name="Gesture25" HorizontalAlignment="Left" Height="133" Margin="598,357,0,0" VerticalAlignment="Top" Width="138" Source="Resources/minusY.PNG" Visibility="Hidden"/>
+        <Image Name="Gesture26" HorizontalAlignment="Left" Height="133" Margin="598,508,0,0" VerticalAlignment="Top" Width="138" Source="Resources/plusZ.PNG" Visibility="Hidden"/>
+        <Image Name="Gesture27" HorizontalAlignment="Left" Height="133" Margin="966,357,0,0" VerticalAlignment="Top" Width="138" Source="Resources/plusX.PNG" Visibility="Hidden"/>
+        <Image Name="Gesture28" HorizontalAlignment="Left" Height="133" Margin="966,508,0,0" VerticalAlignment="Top" Width="138" Source="Resources/minusZ.PNG" Visibility="Hidden"/>
+        <Label Name="PickAnPlace" Content="Ten tryb działa na polecenie 'pick and play' i wykonuje gotowy program. Imituje pobieranie" HorizontalAlignment="Left" Margin="438,78,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label Name="PickAnPlace1" Content="przedmiotów z przenośnika i odkładanie ich do skrzynki mieszczącej dziewięć sztuk." HorizontalAlignment="Left" Margin="438,99,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label Name="PickAnPlace2" Content="Poniższy rysunek przedstawia schemat blokowy stacji, a numerki znajdujące się na bloku" HorizontalAlignment="Left" Margin="438,121,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Label Name="PickAnPlace3" Content="reprezentującym skrzynkę odpowiadają kolejności odkładania ." HorizontalAlignment="Left" Margin="438,145,0,0" VerticalAlignment="Top" FontSize="16" Foreground="White" Visibility="Hidden"/>
+        <Image Name="PickAnPlace4" HorizontalAlignment="Left" Height="190" Margin="568,221,0,0" VerticalAlignment="Top" Width="189" Source="Resources/przenosnik.png" Visibility="Hidden"/>
+        <Image Name="PickAnPlace5" HorizontalAlignment="Left" Height="122" Margin="736,336,0,0" VerticalAlignment="Top" Width="122" Source="Resources/robot.png" Visibility="Hidden"/>
+        <Image Name="PickAnPlace6" HorizontalAlignment="Left" Height="122" Margin="736,458,0,0" VerticalAlignment="Top" Width="122" Source="Resources/skrzynka.png" Visibility="Hidden"/>
+
+    </Grid>
+</Window>

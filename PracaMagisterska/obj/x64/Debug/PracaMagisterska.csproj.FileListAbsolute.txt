@@ -1,0 +1,16 @@
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\bin\x64\Debug\PracaMagisterska.exe.config
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\bin\x64\Debug\PracaMagisterska.exe
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\bin\x64\Debug\PracaMagisterska.pdb
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\bin\x64\Debug\Microsoft.Kinect.dll
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\x64\Debug\MainWindow.g.cs
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\x64\Debug\App.g.cs
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\x64\Debug\PracaMagisterska_MarkupCompile.cache
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\x64\Debug\PracaMagisterska_MarkupCompile.lref
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\x64\Debug\MainWindow.baml
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\x64\Debug\PracaMagisterska.g.resources
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\x64\Debug\PracaMagisterska.Properties.Resources.resources
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\x64\Debug\PracaMagisterska.csproj.GenerateResource.cache
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\x64\Debug\PracaMagisterska.csproj.CoreCompileInputs.cache
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\x64\Debug\PracaMagisterska.csproj.CopyComplete
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\x64\Debug\PracaMagisterska.exe
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\x64\Debug\PracaMagisterska.pdb

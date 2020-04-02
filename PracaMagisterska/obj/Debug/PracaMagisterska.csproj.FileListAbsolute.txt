@@ -1,0 +1,17 @@
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\bin\Debug\PracaMagisterska.exe.config
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\bin\Debug\PracaMagisterska.exe
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\bin\Debug\PracaMagisterska.pdb
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\bin\Debug\Microsoft.Kinect.dll
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\Debug\PracaMagisterska.csprojAssemblyReference.cache
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\Debug\MainWindow.g.cs
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\Debug\App.g.cs
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\Debug\PracaMagisterska_MarkupCompile.cache
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\Debug\PracaMagisterska_MarkupCompile.lref
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\Debug\MainWindow.baml
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\Debug\PracaMagisterska.g.resources
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\Debug\PracaMagisterska.Properties.Resources.resources
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\Debug\PracaMagisterska.csproj.GenerateResource.cache
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\Debug\PracaMagisterska.csproj.CoreCompileInputs.cache
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\Debug\PracaMagisterska.csproj.CopyComplete
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\Debug\PracaMagisterska.exe
+C:\Users\Patry\Desktop\praca_magisterska\VSPracaMagisterska\PracaMagisterska\PracaMagisterska\obj\Debug\PracaMagisterska.pdb
